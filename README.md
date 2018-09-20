@@ -1,5 +1,5 @@
 # Automatic-Turret
-This turret will damage the closes humanoid to it, even if it's a dummy.
+This turret will damage the closest humanoid to it, even if it's a dummy.
 
 local aim = script.Parent
 
@@ -19,11 +19,11 @@ function findClosestTorso()
             end
         end
     end
-		return target
+    return target
 end
 
 while wait(0.15) do
-		local target = findClosestTorso()
+local target = findClosestTorso()
 		if target then
 				aim.CFrame = CFrame.new(aim.Position, t.Position)
 				local bullet = Instance.new("Part")
