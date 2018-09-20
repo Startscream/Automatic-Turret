@@ -1,6 +1,6 @@
 # Automatic-Turret
 This turret will damage the closest humanoid to it, even if it's a dummy.
-
+```lua
 local aim = script.Parent
 
 function findClosestTorso()
@@ -39,3 +39,4 @@ local target = findClosestTorso()
 				end)
 		end
 end
+```
